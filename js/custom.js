@@ -26,11 +26,11 @@ $(function () {
     });
 
 
-    $('.list li').on('click', function (e) {
+    $('.news li').on('click', function (e) {
         e.preventDefault();
         let idx = $(this).index();
         $(this).addClass('on').siblings().removeClass('on');
-        $('.cf li').eq(idx).addClass('on').siblings().removeClass('on');
+        $('.list li').eq(idx).addClass('on').siblings().removeClass('on');
     });
 
     $('.mobile_btn').on('click', function () {
