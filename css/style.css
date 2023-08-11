@@ -770,9 +770,9 @@
 }
 
 @media (max-width:768px) {
-    /* * {
+    * {
         outline: 1px solid palevioletred;
-    } */
+    }
 
 
     .header .top_bar {
@@ -972,7 +972,7 @@
     .main_visual {
         position: relative;
         overflow: hidden;
-        height: 700px;
+        height: 750px;
         background: url(../images/main.jpg) no-repeat center center/cover;
 
         display: flex;
@@ -981,7 +981,7 @@
 
     .main_visual .tit {
         position: absolute;
-        top: 35%;
+        top: 25%;
         transform: translate(0, -50%);
         color: var(--bg);
     }
@@ -998,11 +998,12 @@
 
     .main_visual .content .quick {
         position: relative;
-        display: grid;
-        grid-template-columns: repeat(2, 180px);
+display: grid;
+grid-template-columns: repeat(2, 175px);
         width: 100%;
         height: auto;
         box-shadow: 0 4px 5px rgba(22, 22, 22, 0.3);
+        margin: 0 0 -4px 0;
         z-index: 1;
     }
 
@@ -1010,12 +1011,12 @@
         display: flex;
         color: var(--bg);
         font-size: 20px;
-        padding: 12px 12px;
+        padding:12px;
         align-items: center;
         height: auto;
         align-self: center;
-
-        width: 100%;
+width: 100%;
+justify-content: center;
     }
 
     .main_visual .content .quick li:nth-child(1) {
@@ -1057,6 +1058,8 @@
     .main_visual .content .quick li:nth-child(5) {
         background: var(--db);
         transition: 0.5s;
+        width: 350px;
+
     }
 
     .main_visual .content .quick li:nth-child(5):hover {
@@ -1071,7 +1074,7 @@
 
     .main_visual .content .quick li>a>span {
         font-size: 28px;
-        line-height: 70px;
+        line-height: 40px;
     }
 
     .main_slide {
@@ -1079,21 +1082,22 @@
         bottom: 0;
         left: 0;
         background: var(--db);
-        width: 100%;
-        height: auto;
+        width: 350px;
+        height: auto;       padding: 10px 12px;
     }
 
     .quick_slide {
         position: relative;
         z-index: 1;
+
     }
 
     .quick_slide .itm {
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
-        gap: 32px;
+display: flex;
+flex-direction: column;
+        gap: 16px;
         color: var(--bg);
-        padding: 57px 20px;
+padding: 2px 0;
     }
 
     .quick_slide .itm>* {
@@ -1106,8 +1110,8 @@
 
     .quick_slide .itm .box span {
         color: var(--bb);
-        font-size: 70px;
-        margin: 0 24px 0 0;
+        font-size: 36px;
+        margin: 4px 8px 0 0;
     }
 
     .quick_slide .itm .box .txt {
@@ -1116,13 +1120,15 @@
 
     .quick_slide .itm .box .txt strong {
         display: block;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 700;
-        margin: 0 0 16px 0;
+        margin: 0 0 8px 0;
     }
 
     .quick_slide .itm .box .txt p {
+        font-size: 14px;
         font-weight: 400;
+        line-height: 1.2;
     }
 
     .main_slide .arrows {
