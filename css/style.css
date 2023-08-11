@@ -770,11 +770,6 @@
 }
 
 @media (max-width:768px) {
-    * {
-        outline: 1px solid palevioletred;
-    }
-
-
     .header .top_bar {
         background: var(--dc);
         color: var(--bg);
